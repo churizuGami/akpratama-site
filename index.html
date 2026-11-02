@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A. K. Pratama | Practical books for high-achievers</title>
+<meta name="description" content="A. K. Pratama writes practical books for capable people who can't shake the feeling they don't belong. Author of The Imposter Evidence Log.">
+<meta property="og:title" content="A. K. Pratama">
+<meta property="og:description" content="Practical books for high-achievers who quietly feel like frauds.">
+<meta property="og:image" content="https://akpratama.com/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3EBDD; --paper-soft:#FBF7EF; --kraft:#C9A978; --kraft-deep:#B48E57;
+  --ink:#2F3A45; --ink-muted:#4A4A42; --rule:#8C8576; --stamp:#9E3B2C; --walnut:#3A2A1E;
+  --tw:"Courier Prime","Courier New",ui-monospace,monospace;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--stamp)}
+a:hover{color:var(--ink)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.tw{font-family:var(--tw)}
+.label{font-family:var(--tw);font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--stamp);margin:0 0 12px}
+h1,h2,h3{font-family:var(--tw);font-weight:700;line-height:1.1;margin:0}
+h2{font-size:clamp(28px,4vw,40px);margin-bottom:20px}
+p{margin:0 0 16px}
+.btn{display:inline-block;font-family:var(--tw);font-weight:700;font-size:17px;letter-spacing:1px;text-decoration:none;padding:14px 26px;border:2px solid var(--stamp);background:var(--stamp);color:#fff;border-radius:2px}
+.btn:hover{background:#7f2f23;border-color:#7f2f23;color:#fff}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn[aria-disabled="true"]{opacity:.75;cursor:default}
+
+/* header */
+header{background:var(--walnut);color:var(--paper)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:18px;padding-bottom:18px}
+.logo{font-family:var(--tw);font-weight:700;font-size:22px;letter-spacing:2px;color:var(--paper);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:20px}
+nav a{font-family:var(--tw);font-size:15px;color:var(--kraft);text-decoration:none}
+nav a:hover{color:var(--paper)}
+
+/* hero */
+.hero{background:var(--kraft);border-bottom:2px solid var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center;padding-top:64px;padding-bottom:64px}
+.hero h1{font-size:clamp(38px,6vw,64px);margin-bottom:22px}
+.hero .lead{font-size:21px;max-width:34ch;margin-bottom:28px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero .cover{max-width:340px;justify-self:center;border:2px solid var(--ink);transform:rotate(2deg)}
+.stamp{display:inline-block;border:4px solid var(--stamp);color:var(--stamp);font-family:var(--tw);font-weight:700;letter-spacing:4px;padding:4px 14px;transform:rotate(-7deg);font-size:15px;margin-bottom:22px}
+
+/* sections */
+section{padding:72px 0;border-bottom:1px solid var(--rule)}
+.two{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+.inside{list-style:none;padding:0;margin:20px 0 28px}
+.inside li{padding:12px 0 12px 44px;border-top:1px solid var(--rule);position:relative}
+.inside li:last-child{border-bottom:1px solid var(--rule)}
+.inside li::before{content:attr(data-n);position:absolute;left:0;top:12px;width:28px;height:28px;border:2px solid var(--stamp);color:var(--stamp);font-family:var(--tw);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.note{font-size:15px;color:var(--ink-muted)}
+
+.kit{background:var(--walnut);color:var(--paper);border-bottom:none}
+.kit .two{align-items:center}
+.kit h2{color:var(--paper)}
+.kit .label{color:var(--kraft)}
+.kit .card{background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:32px}
+.kit .card p{color:var(--ink)}
+
+.about .card{background:var(--paper-soft);border:2px solid var(--ink);padding:32px;max-width:760px}
+.next{background:var(--paper-soft)}
+.next .file{border:2px dashed var(--rule);padding:28px;max-width:760px}
+
+footer{background:var(--walnut);color:var(--kraft);padding:40px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer a{color:var(--paper)}
+
+@media (max-width:820px){
+  .hero .wrap,.two{grid-template-columns:minmax(0,1fr);gap:36px}
+  .hero .cover{max-width:260px}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">A. K. PRATAMA</a>
+    <nav aria-label="Main">
+      <a href="#book">The Book</a>
+      <a href="#kit">Free Kit</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="stamp">CASE FILE No. 001</span>
+        <h1>You're not a fraud. You're missing evidence.</h1>
+        <p class="lead">Practical books for capable people who can't shake the feeling they don't belong. No pep talks. A system: write down the evidence, and let the record speak.</p>
+        <div class="actions">
+          <a class="btn" href="https://a-k-pratama-books.kit.com/08561724f9">Get the Free Starter Kit</a>
+          <a class="btn ghost" href="https://www.amazon.com/dp/B0HP7TB7S7" target="_blank" rel="noopener">Get the Book on Amazon</a>
+        </div>
+      </div>
+      <img class="cover" src="cover.jpg" alt="Cover of The Imposter Evidence Log by A. K. Pratama: an Exhibit A evidence tag on a navy background" width="800" height="1280">
+    </div>
+  </div>
+
+  <section id="book">
+    <div class="wrap two">
+      <div>
+        <p class="label">Exhibit A · The Book</p>
+        <h2>The Imposter Evidence Log</h2>
+        <p class="tw" style="font-size:17px">A 5-Minute Daily Method for High-Achievers Who Feel Like Frauds</p>
+        <a class="btn" href="https://www.amazon.com/dp/B0HP7TB7S7" target="_blank" rel="noopener">Buy on Amazon</a>
+        <p class="note" style="margin-top:12px">Out now on Kindle.</p>
+      </div>
+      <div>
+        <p>You've earned the promotion, the title and the trust. And you still wait for the day someone figures out you've been winging it. Every win gets explained away as luck. Every mistake gets filed permanently.</p>
+        <p>Positive thinking bounces right off a skeptical mind. So this book takes a different approach: instead of trying to <em>feel</em> confident, you build a case. Five minutes a day, you write down specific, dated proof of your competence, until the fraud voice runs out of arguments.</p>
+        <ul class="inside">
+          <li data-n="1">The five moves your fraud voice uses, and a comeback for each</li>
+          <li data-n="2">The five-part daily entry that turns "I got lucky" into hard evidence</li>
+          <li data-n="3">How to log mistakes without spiraling</li>
+          <li data-n="4">A 15-minute weekly review that reveals strengths you've been blind to</li>
+          <li data-n="5">An Evidence Brief for performance reviews, salary talks and interviews</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="kit" class="kit">
+    <div class="wrap two">
+      <img src="starter-kit.jpg" alt="The Evidence Log Starter Kit pages fanned out on a walnut desk" width="800" height="1000" loading="lazy">
+      <div class="card">
+        <p class="label">Free · Printable &amp; fillable</p>
+        <h2 style="color:var(--ink)">The Evidence Log Starter Kit</h2>
+        <p>Start your log tonight with three free exhibits:</p>
+        <ul class="inside" style="margin-top:8px">
+          <li data-n="1"><strong>The Fraud Voice Cheat Sheet:</strong> five moves, five comebacks, one four-step cross-examination</li>
+          <li data-n="2"><strong>Daily Evidence Log pages:</strong> five parts, five minutes a night</li>
+          <li data-n="3"><strong>The Evidence Brief:</strong> one page for your next review or interview</li>
+        </ul>
+        <a class="btn" href="https://a-k-pratama-books.kit.com/08561724f9">Send Me the Kit</a>
+        <p class="note" style="margin-top:12px">Free. You'll also get the occasional note from me and first word on new books. Unsubscribe any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <p class="label">About the author</p>
+      <div class="card">
+        <h2>A. K. Pratama</h2>
+        <p>A. K. Pratama writes practical books for high-achievers who quietly feel like frauds. <em>Pratama</em> means "first" in Indonesian, a reminder that every case starts with a single piece of evidence.</p>
+        <p>The books skip the pep talks and hand you a system: write down the evidence, and let the record speak.</p>
+        <p class="note">These books are practical tools, not therapy. If self-doubt is tangled up with ongoing anxiety or depression, talking to a mental health professional is a smart move.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="next">
+    <div class="wrap">
+      <p class="label">Next case file</p>
+      <div class="file">
+        <h3 style="font-size:26px;margin-bottom:12px">Get It Out of Your Head</h3>
+        <p class="tw" style="font-size:16px">A 10-Minute Method to Stop Overthinking, Calm Racing Thoughts and Quiet the 2 A.M. Replay</p>
+        <p>If your brain replays every conversation at 2 a.m., this one's for you. Same idea, new case: get the loop out of your head and onto the page. <a href="https://unload.akpratama.com">Grab the free Unload Starter Kit</a> and you'll hear the day it's out.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-bottom:none">
+    <div class="wrap">
+      <p class="label">Contact</p>
+      <h2>Questions, review copies, or just a win you want to share?</h2>
+      <p>Email <a href="mailto:hello@akpratama.com">hello@akpratama.com</a>. I read every message.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 A. K. Pratama. All rights reserved.</span>
+    <span>Email signups are handled by Kit and used only to send the Starter Kit and occasional updates. <a href="#contact">Contact</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
